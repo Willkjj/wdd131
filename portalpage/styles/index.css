@@ -1,0 +1,20 @@
+@import url(/portalpage/styles/styles.css);
+
+#mainContent {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--white-text-color);
+    column-gap: 3%;
+}
+
+#aboutMe {
+    grid-column: 1 / 1;
+}
+
+#interestsBoard {
+    height: 100%;
+    width: 100%;
+    grid-column: 2 / 2;
+}
+

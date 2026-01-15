@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    h1, h2, h3 {
+        font-family: "Space Grotesk", roboto;
+    }
+    p, a {
+        font-family: roboto;
+    }
+}
+
+:root {
+  --light-brown-accent: #edcf83;
+  --dark-brown-accent: #79432E;
+  --red-accent: #f1835e; 
+  --white-text-color: #e4e7e5;
+  --black-color: #110a06;
+}
+
+body {
+    background-color: var(--black-color);
+}
+
+header {
+    border-bottom: 5px solid var(--light-brown-accent);
+    display: grid;
+    grid-template-columns: 50px 100%;
+    background-color: var(--black-color);
+    p, a {
+        color: var(--white-text-color);
+        font-size: larger;
+        text-decoration: none;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    a:hover {
+        background-color: var(--light-brown-accent);
+        color: var(--black-color);
+    }
+
+    height: 50px;
+    line-height: 50px;
+}
+
+#logo {
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    color: var(--white-text-color);
+    text-align: center;
+    border-top: 5px solid var(--light-brown-accent);
+}
