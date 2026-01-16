@@ -26,7 +26,7 @@ body {
 header {
     border-bottom: 5px solid var(--light-brown-accent);
     display: grid;
-    grid-template-columns: 50px 100%;
+    grid-template-columns: 50px 1fr;
     background-color: var(--black-color);
     p, a {
         color: var(--white-text-color);
@@ -58,4 +58,5 @@ footer {
     color: var(--white-text-color);
     text-align: center;
     border-top: 5px solid var(--light-brown-accent);
+    padding: 5px;
 }
