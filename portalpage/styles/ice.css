@@ -1,0 +1,38 @@
+@import url(/portalpage/styles/styles.css);y
+
+/* :root {
+  --light-brown-accent: #edcf83;
+  --dark-brown-accent: #79432E;
+  --red-accent: #f1835e; 
+  --white-text-color: #e4e7e5;
+  --black-color: #110a06;
+} */
+
+
+#mainContent {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+
+.iceProjects {
+    border: 5px solid var(--red-accent);
+    height: 200px;
+    width: 200px;
+    text-decoration: underline var(--black-color);
+    color: var(--white-text-color);
+    font-size: larger;
+    text-align: center;
+    line-height: 200px;
+    margin: 5%;
+}
+
+.iceProjects:hover {
+    background-color: var(--red-accent);
+    color: var(--black-color);
+    text-decoration: underline var(--red-accent);
+    
+}
