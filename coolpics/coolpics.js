@@ -1,5 +1,5 @@
 
-const image = document.querySelector('.gallery img');
+const image = document.querySelectorAll('.gallery img');
 const modal = document.querySelector('dialog');
 const modalImage = modal.querySelector('img');
 const closeButton = modal.querySelector('.close-viewer');
@@ -11,11 +11,11 @@ image.forEach(element => {
 
 function openModal(e) {
     const img = e.target;
-    console.log(target)
+
     
     const src = img.getAttribute('src');
-    const alt = img.getAttribute('alt');
 
+    const alt = img.getAttribute('alt');
     const full = src.replace('sm','full');
 
     modalImage.src = full;
