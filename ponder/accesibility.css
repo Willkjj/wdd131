@@ -11,14 +11,10 @@ header, footer {
     padding: 1rem;
     text-align: center;
 }
-.main-nav {
-    list-style: none;
+nav {
     padding: 0;
 }
-.main-nav li {
-    padding: 8px;
-}
-.main-nav a {
+nav {
     color: #ffc107;
     text-decoration: none;
 }
