@@ -14,7 +14,7 @@ header, footer {
 nav {
     padding: 0;
 }
-nav {
+.main-nav a {
     color: #ffc107;
     text-decoration: none;
 }
