@@ -44,9 +44,6 @@ const articles = [
 
 
 
-
-
-
 const bookList = document.getElementById('book-list');
 console.log(bookList)
     articles.forEach(book=>{
