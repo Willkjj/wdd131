@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card</title>
+    <link rel="stylesheet" href="./creditcard.css">
+    <link rel="icon" href="./favicon.ico">
+    <script src="creditcard.js" defer></script>
+</head>
+<body>
+    <form  id="creditCardInfo" method="get">
+        <div id="wholeCard">
+            <div id="front">
+                <p>TOTAL:$199</p>
+                <p id="💳">💳</p>
+                <div id="cardNumber">
+                    <label for="cardNumber">CARD NUMBER</label>
+                    <input type="text" id="cardNumbers" name="cardNumber" required pattern="[0-9]{16}" placeholder="1234 5678 9101 1020">
+                </div>
+                <div id="cardHolder">
+                    <label for="cardHolder">CARD HOLDER</label>
+                    <input type="text" id="cardHolder" name="cardHolder" required placeholder="John Doe">
+                </div>
+                <div id="cardExpiration">
+                    <label for="expirationDate">EXPIRATION</label>
+                    <input type='text' id='month' name="expMonth" required placeholder="MM" aria-labelledby="expirationDate">
+                    <input type='text' id='year' name="expYear" required placeholder="YY" aria-labelledby="expirationDate">
+                </div>
+            </div>
+            <div id="back">
+                <div id="bar"></div>
+                <div id="CVC">
+                    <label for="cardCVC">CVC/CVV</label>
+                    <input type="text" id="cardHolder" name="cardHolder" required placeholder="xxx">
+                </div>
+            </div>
+        <button type="submit">Submit</button>
+        </div>
+    </form>
+    <section class="output"></section>
+</body>
+</html>
