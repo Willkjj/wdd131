@@ -51,7 +51,13 @@ characters.forEach(character => {
 
     atkButton.addEventListener("click", () =>{
         character.attacked()
-        healthDisplay.textContent = `Health: ${character.health}`
+        if (character.health > 0) {
+            healthDisplay.textContent = `Health: ${character.health}`
+        } else {
+            healthDisplay.textContent = `Health: DEAD`
+            card.classList.add("blurr")
+        }
+        
     });
     lvlUpButton.addEventListener("click", () => {
         character.levelUp()
@@ -62,8 +68,4 @@ characters.forEach(character => {
     characterSection.appendChild(card);
 
 });
-
-
-
-// In the future, when this would have more than one character, I'd move the functions out of the individual character and either create them here or have them floating around in characters. Don't know what the code would call for just yet
 
