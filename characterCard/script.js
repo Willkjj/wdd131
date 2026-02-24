@@ -13,19 +13,6 @@ let characters = [
         levelUp : function() {
             return this.level ++
         }
-    },
-    {
-        name: 'Bortleblat',
-        class: 'Swamp Beast Diplomat',
-        level: 8,
-        health: 100,
-        image: "snortleblat.webp",
-        attacked : function() {
-            return this.health = this.health - 20
-        },
-        levelUp : function() {
-            return this.level ++
-        }
     }
 ];
 characters.forEach(character => {
