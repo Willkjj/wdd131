@@ -1,0 +1,10 @@
+.cardContainer {
+    display: flex;
+}
+.recipie {
+    width: 1vw;
+    margin: 0 auto;
+    img {
+        width: 100%;
+    }
+}
