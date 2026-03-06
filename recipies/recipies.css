@@ -1,10 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+h1,h2 {
+    font-family: "Amatic SC";
+}
+h2 {
+    color: darkcyan;
+    font-size: 40px;
+}
+.logo {
+    width: 50vw;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 5%;
+    img {
+        width: 100%;
+    }
+    h1 {
+        text-align: center;
+        align-self: center;
+        line-height: 50px;
+        font-size: 50px;
+        font-weight: bold;
+    }
+}
+.searchBar {
+    margin: 5% auto;
+    width: 75vw;
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    gap: 5%;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    .searchInput {
+        border: none;
+        border-right: 2px solid black;
+
+    }
+    img {
+        width: 100%;
+    }
+}
 .cardContainer {
     display: flex;
 }
-.recipie {
-    width: 1vw;
-    margin: 0 auto;
+.recipe {
+    width: 75vw;
+    margin: 5% auto;
+    padding: 2%;
+    border: 2px solid black;
+    border-radius: 10px;
+    .mealGenre {
+        margin-top: 0;
+        padding-top: 0;
+        padding: 0 3px;
+        border: 3px solid gray;
+        border-top: 0px;
+        background-color: gray;
+        border-radius: 0 0 10px 10px;
+        width: fit-content;
+        text-align: center;
+    }
     img {
         width: 100%;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        display: block;
+    }
+    .recipeInfo {
+        margin-top: 2%;
+        h2 {
+            padding: 3% 0;
+        }
+
+    }
+}
+.recipeDescription {
+    display: none;
+}
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.socialMediaIcons {
+    display: flex;
+    justify-content: space-around;
+    a {
+        width: 50px;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    h2 {
+        font-size: 4vw;
+    }
+    .recipe {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5%;
+    }
+    .recipeDescription {
+        display: block;
+        padding: 2% 0;
+        font-size: 1.5vw;
+    }
+    .mealGenre {
+        font-size: 2vw;
+    }
+    .logo {
+        img {
+            width: 15vw;
+        }
+        h1 {
+            font-size: 10vw;
+        }
+    }
+    .searchInput {
+        font-size: 2vw;
+    }
+    footer {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5% auto;
+        width: 75vw;
+
     }
 }
