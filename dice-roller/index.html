@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duodecem</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -21,25 +22,17 @@
             <p>Click the buttons below to roll a 20 sided die for the appropriate character stat</p>
             <div class="characterSelect">
                 <h3>Select a character!</h3>
-                <select name="" id=""></select>
+                <!-- <select name="" id=""></select> -->
             </div>
-            <div class="roller">
-            <button>Strength</button>
-            <button>Dexterity</button>
-            <button>Constitution</button>
-            <button>Intelligence</button>
-            <button>Wisdom</button>
-            <button>Charisma</button>
-            </div>
+            <div class="roller stats"></div>
         </div>
         <div class="floater">
             <h2>Roll any die you want!</h2>
             <p>Select a modifier, taken from the stats of your chosen character, and then click the dice buttons below to add that modifer to the result of the die roll</p>
             <div class="statSelect">
                 <h3>Select a modifer!</h3>
-                <select name="" id=""></select>
             </div>
-            <div class="roller">
+            <div class="roller dice">
                 <button>d20</button>
                 <button>d12</button>
                 <button>d10</button>
@@ -48,12 +41,7 @@
                 <button>d4</button>
             </div>
         </div>
-        <div class="outputBox floater">
-            <p>16 plus 2 = 18</p>
-            <p>[dice result] plus [modifier] = [dice result + modifier]</p>
-            <p>[dice result] plus [modifier] = [dice result + modifier]</p>
-            <p>[dice result] plus [modifier] = [dice result + modifier]</p>
-        </div>
+        <div class="outputBox floater"></div>
     </main>
     <footer>
         <p>&copy; William Jarman</p>
