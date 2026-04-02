@@ -35,7 +35,6 @@ nav, footer {
   text-align: center;
   font-size: 1.2em;
   display: flex;
-
 }
 nav a {
   padding: .5em;
@@ -45,7 +44,8 @@ nav a {
 }
 nav a:link,
 nav a:visited {
-  color: var(--nav-link-color);
+  color: #3de356;
+  
 }
 nav a:hover {
   color: var(--nav-hover-link-color);
@@ -74,6 +74,10 @@ p {
     color: var(--paragraph-color);
     padding: 2% 1%;
     margin: 0;
+}
+img {
+  max-width: 75vw;
+  margin: 2% 15%;
 }
 .floater {
     color: var(--accent1-color);
@@ -124,5 +128,9 @@ footer {
         p {
           margin-left: 3%;        
         }
+    }
+    img {
+    margin: 2% 30%;
+    width: 500px;
     }
 }
