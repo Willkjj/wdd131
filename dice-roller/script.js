@@ -81,9 +81,12 @@ function diceRoll(die) {
 }
 function renderCharacterSelect() {
     let characterSelect = document.querySelector('.characterSelect')
+    let label = document.createElement('label')
+    label.setAttribute('for','characterSelect')
+    label.innerHTML = `<h3>Select a character!</h3>`
     characterSelect.innerHTML = ``
     dropdown = document.createElement("select")
-    dropdown.setAttribute("name","Character Select")
+    dropdown.setAttribute("id","characterSelect")
     
     dropdown.addEventListener('change', () => {
         selectedCharacter = characters.find(
@@ -95,7 +98,7 @@ function renderCharacterSelect() {
     })
 
     renderCharacterOptions(dropdown)
-
+    characterSelect.appendChild(label)
     characterSelect.appendChild(dropdown)
 
 }
@@ -134,9 +137,13 @@ function renderRollerStats(currentkey) {
 }
 function renderStatSelect(currentkey) {
     let statSelect = document.querySelector('.statSelect')
+    let label = document.createElement('label')
+    label.setAttribute('for','statSelect')
+    label.innerHTML = `<h3>Select a modifer!</h3>`
     statSelect.innerHTML = ``
+    statSelect.appendChild(label)
     select = document.createElement("select")
-    select.setAttribute("name","Stat Select")
+    select.setAttribute("id","statSelect")
     character = renderStatOptions(select,currentkey)
     renderRollerDice("Strength",character)
 
@@ -169,6 +176,7 @@ function renderRollerDice(currentStat,character) {
     dice.forEach(die => {
         button = document.createElement("button")
         button.innerHTML = die["name"]
+        button.setAttribute('aria-label',`roll a ${die['number']} sided die`)
         button.addEventListener("click", () =>{
             roll = diceRoll(die["number"])
             currentModifier = getModifier(character[currentStat])
